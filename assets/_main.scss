@@ -77,6 +77,12 @@ ul.pagination {
   }
 }
 
+// Styles for the main layout container
+.book-layout-main {
+  display: flex;
+  width: 100%; // Make the main layout container full viewport width
+}
+
 .container {
   max-width: $container-max-width;
   margin: 0 auto;
@@ -172,6 +178,10 @@ body[dir="rtl"] .book-menu {
   min-width: $body-min-width;
   flex-grow: 1;
   padding: $padding-16;
+
+  max-width: 65rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .book-post {

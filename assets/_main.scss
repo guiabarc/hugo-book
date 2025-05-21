@@ -297,6 +297,66 @@ body[dir="rtl"] .book-menu {
   }
 }
 
+// --- Project Card Styles ---
+.project-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $padding-16 * 1.5;
+}
+
+a.project-card {
+  background-color: $gruvbox-bg1;
+  border: 1px solid $gruvbox-bg3;
+  border-radius: 15px;
+  padding: $padding-16 * 1.5;
+  margin-bottom: $padding-16 * 1.5;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba($gruvbox-bg-hard, 0.5);
+    .project-card-content h3 {
+      color: $gruvbox-aqua-strong;
+    }
+  }
+
+  .project-card-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: $padding-16 * 1.5;
+    flex-shrink: 0;
+  }
+
+  .project-card-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: $padding-8;
+      color: $gruvbox-fg-bright;
+    }
+
+    p {
+      color: $gruvbox-fg-primary;
+      font-size: $font-size-14;
+      line-height: 1.6;
+      margin-top: 0;
+      margin-bottom: $padding-16;
+    }
+  }
+}
+// --- End of Project Card Styles ---
+
 // Responsive styles
 .book-menu-content,
 .book-toc-content,

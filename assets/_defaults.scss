@@ -1,3 +1,5 @@
+@import "gruvbox_theme_variables"; // Import Gruvbox color variables
+
 // Used in layout
 $padding-1: 1px !default;
 $padding-4: 0.25rem !default;
@@ -47,19 +49,23 @@ $hint-colors: (
 }
 
 @mixin theme-dark {
-  --gray-100: #494e54;
-  --gray-200: #5c6165;
-  --gray-500: #999d9f;
+  // UI Grays (mapping to HugoBook's gray scale)
+  --gray-100: #{$gruvbox-bg-medium};     // $gruvbox-bg-medium (Slightly lighter BG / UI elements)
+  --gray-200: #{$gruvbox-bg1};          // $gruvbox-bg1 (Elements like modal headers, footers)
+  --gray-500: #{$gruvbox-bg2};          // $gruvbox-bg2 (Hover states, input field BGs, borders)
 
-  --color-link: #84b2ff;
-  --color-visited-link: #b88dff;
+  // Links
+  --color-link: #{$gruvbox-blue-strong};
+  --color-visited-link: #{$gruvbox-purple-muted};
 
-  --body-background: #343a40;
-  --body-font-color: #e9ecef;
+  // Body
+  --body-background: #{$gruvbox-bg-hard};
+  --body-font-color: #{$gruvbox-fg-primary};
 
-  --icon-filter: brightness(0) invert(1);
+  --icon-filter: brightness(0) invert(1); // Default, can be changed if icons need specific Gruvbox color
 
-  --hint-color-info: #6bf;
-  --hint-color-warning: #fd6;
-  --hint-color-danger: #f66;
+  // Hint colors
+  --hint-color-info: #{$gruvbox-blue-strong};
+  --hint-color-warning: #{$gruvbox-yellow-strong};
+  --hint-color-danger: #{$gruvbox-red-strong};
 }

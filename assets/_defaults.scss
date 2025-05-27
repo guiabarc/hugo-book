@@ -18,7 +18,7 @@ $body-font-weight: normal !default;
 $body-min-width: 20rem !default;
 $container-max-width: 80rem !default;
 
-$menu-width: 20rem !default;
+$menu-width: 24rem !default;
 $toc-width: 16rem !default;
 
 $mobile-breakpoint: $menu-width + $body-min-width * 1.2 + $toc-width !default;
@@ -76,4 +76,4 @@ $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mon
 
 $font-family-title: "Space Grotesk", $font-family-sans-serif !default;
 $font-family-body: "Work Sans", $font-family-sans-serif !default;
-$font-family-menu: "Doto", $font-family-sans-serif !default;
+$font-family-menu: "Kode Mono", $font-family-sans-serif !default;

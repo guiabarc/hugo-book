@@ -150,9 +150,8 @@ a .book-icon {
     margin: 0 0 2.5rem 0;
     a {
       font-family: $font-family-menu;
-      font-variation-settings: "ROND" 100;
-      font-size: 1.18rem;
-      font-weight: 500;
+      font-size: 1.15rem;
+      font-weight: 600;
       color: var(--body-font-color);
       text-decoration: none;
       padding: 0.2em 0;
@@ -180,9 +179,10 @@ a .book-icon {
 
   .book-menu-projects {
     h2 {
-      font-size: 1.08rem;
-      font-weight: 800;
-      letter-spacing: 0.08em;
+      font-family: $font-family-menu;
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
       margin: 0 0 1.5rem 0;
       text-transform: uppercase;
 
@@ -208,12 +208,13 @@ a .book-icon {
       margin-bottom: 1.2rem;
 
       h3 {
-        font-size: 0.98rem;
-        font-weight: 700;
+        font-family: $font-family-menu;
+        font-size: 1.05rem;
+        font-weight: 600;
         text-transform: uppercase;
-        color: var(--gray-500);
+        color: var(--body-font-color);
         margin: 0 0 0.2rem 0;
-        letter-spacing: 0.04em;
+        letter-spacing: 0.03em;
         line-height: 1.2;
         white-space: nowrap;
         overflow: hidden;
@@ -229,17 +230,16 @@ a .book-icon {
 
         li {
           margin: 0.2rem 0 0.2rem 0.7rem;
-          font-size: 1.05rem;
-          font-weight: 400;
 
           a {
             font-family: $font-family-menu;
-            font-variation-settings: "ROND" 100;
+            font-size: 0.95rem;
             color: var(--body-font-color);
             text-decoration: none;
             display: inline-block;
             transition: color 0.2s, transform 0.2s ease-out;
             will-change: transform;
+            font-weight: 600;
 
             &:hover {
               color: var(--color-link);

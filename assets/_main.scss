@@ -184,7 +184,7 @@ a .book-icon {
       font-weight: 600;
       letter-spacing: 0.03em;
       margin: 0 0 1.5rem 0;
-      text-transform: uppercase;
+      text-transform: none !important;
 
       a {
         color: var(--body-font-color);
@@ -212,7 +212,7 @@ a .book-icon {
         font-family: $font-family-menu;
         font-size: 1.0rem;
         font-weight: 400;
-        text-transform: uppercase;
+        text-transform: none !important;
         color: $gruvbox-fg-dim;
         margin: 0 0 0.2rem 0;
         letter-spacing: 0.03em;

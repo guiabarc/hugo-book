@@ -5,6 +5,9 @@
     {{ partial "docs/html-head" . }}
     {{ partial "docs/inject/head" . }}
 
+    <!-- Google Fonts link for Doto -->
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght,ROND@100..900,0..100&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <style>
       .not-found {
         text-align: center;
@@ -13,6 +16,34 @@
         margin: .25em 0 0 0;
         opacity: .25;
         font-size: 40vmin;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 500;
+      }
+      .not-found h2 {
+        font-family: "Doto", sans-serif;
+        font-variation-settings: "ROND" 100;
+        font-size: 5vmin;
+      }
+      .not-found h3 {
+        font-family: "Doto", sans-serif;
+        font-variation-settings: "ROND" 100;
+        font-size: 2vmin;
+      }
+      .not-found h3 a {
+        color: var(--body-font-color, #ebdbb2);
+        text-decoration: none;
+        transition: all 0.2s ease;
+        padding: 0.5em 1em;
+        display: inline-block;
+      }
+      .design-work-link {
+        display: block;
+      }
+      .design-work-link:focus {
+        outline: none;
+      }
+      .design-work-link:active {
+        outline: none; /* Also remove for active state if desired */
       }
     </style>
   </head>
@@ -23,10 +54,17 @@
         <h1>404</h1>
         <h2>Page Not Found</h2>
         <h3>
-          <a href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
+          <a href="{{ .Site.Home.RelPermalink }}" class="design-work-link doto-menu-link" style="color: var(--body-font-color, #ebdbb2); transition: all 0.2s ease; text-decoration: none;">{{ .Site.Title }}</a>
         </h3>
       </div>
     </main>
+
+    <style>
+      .design-work-link:hover {
+        transform: translateY(-2px);
+        color: #fbf1c7 !important; /* Slightly lighter version of the base color */
+      }
+    </style>
 
     {{ partial "docs/inject/body" . }}
   </body>
